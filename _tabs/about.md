@@ -3,8 +3,8 @@ title: About
 icon: fas fa-user
 ---
 
-👋 Hello! I’m **Caroline Murithi** a passionate **Data Analyst** and **IT Enthusiast** with a background in **Business Information Technology**.  
-I enjoy exploring how data and technology can work together to solve real-world problems and improve decision-making.
+👋 Hello! I’m a passionate **Data Analyst, AI, ML, DL and IT Enthusiast** with a background in **Business Information Technology**.  
+ I enjoy exploring how data and technology can work together to solve real-world problems and improve decision-making.
 
 💡 **Key Areas**
  - Data Analysis, Cleaning & Visualization  
