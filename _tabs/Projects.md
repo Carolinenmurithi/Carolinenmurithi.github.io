@@ -16,7 +16,7 @@ The goal was to prepare and validate the dataset for accurate analysis and visua
 
 **Key Steps**
 - Imported and explored the dataset using Pandas  
-- Handled missing values, duplicates, and inconsistent formats  
+- Handled missing values, duplicates, and inconsistent formats 
 - Created new features such as `duration_value` and `duration_unit`  
 - Validated and exported the cleaned dataset as `netflix_clean.csv`
 
