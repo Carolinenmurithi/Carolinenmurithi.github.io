@@ -53,10 +53,7 @@ icon: fas fa-rocket
     and age. Created visualizations and derived insights.
   </p>
 
-  <span class="section-label">🔗 Repo / Demo:</span>
-  <p>
-    <a href="https://www.kaggle.com/code/weldonsitienei/weldon-kipkoech-eda" target="_blank" rel="noopener">🌐 View on Kaggle</a>
-  </p>
+
 </div>
 
 <!-- Hotel Dashboard Project -->
@@ -115,7 +112,6 @@ icon: fas fa-rocket
     <li>Created dynamic filters for gender, department, and job role comparisons.</li>
   </ul>
 
-  <span class="section-label">🔗 Repo / Demo:</span>
 
 </div>
 
@@ -146,6 +142,5 @@ icon: fas fa-rocket
     <li>🧹 Performed data cleaning, outlier detection, and train-test splitting.</li>
   </ul>
 
-  <span class="section-label">🔗 Repo / Demo:</span>
  
 </div>
