@@ -8,7 +8,7 @@ tags: [Python, Pandas, Google Colab, Kaggle]
 **Date:** September 2025  
 **Tools:** Python, Pandas, Google Colab  
 
-This project focused on **data wrangling** and **cleaning** the Netflix dataset from Kaggle.  
+This project focused on **data wrangling** and **cleaning** the Netflix dataset from Kaggle. 
 The goal was to prepare and validate the dataset for accurate analysis and visualization.
 
 **Key Steps**
