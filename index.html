@@ -1,261 +1,197 @@
 ---
-layout: "default"
+layout: default
 title: "HOME"
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Caroline Murithi | Portfolio</title>
+<style>
+/* ======== Base Styles ======== */
+body {
+  font-family: 'Inter', sans-serif;
+  color: #e5e7eb;
+  background: linear-gradient(180deg, #0f172a, #1e293b);
+  margin: 0;
+  padding: 0 1.5rem;
+  line-height: 1.7;
+}
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bubblegum+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+section {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+section:hover {
+  transform: translateY(-5px);
+}
 
-  <style>
-    :root {
-      --primary: #ffd36d;
-      --secondary: #e94560;
-      --accent: #14ffec;
-      --bg: #18122b;
-      --container-bg: #221e3a;
-      --container-alt: #232d4b;
-      --border: #3c3752;
-      --shadow: 0 6px 32px rgba(44,30,92,0.24);
-      --sep: #332d64;
-      --badge-bg: #23214b;
-      --badge-radius: 10px;
-    }
+h1, h2, h3 {
+  color: #38bdf8;
+  font-weight: 700;
+}
 
-    html, body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(120deg, #1f1d3a 0%, #3f3351 100%);
-      font-family: 'Roboto', sans-serif;
-      color: #fff;
-      min-height: 100vh;
-      width: 100vw;
-      box-sizing: border-box;
-    }
+h1 span {
+  color: #facc15;
+}
 
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+a {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+a:hover {
+  color: #facc15;
+}
 
-    .main-container {
-      width: 98%;
-      max-width: 970px;
-      margin: 2.5rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1.6rem;
-    }
+/* ======== Skills Badges ======== */
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
 
-    .colorful-container {
-      background: linear-gradient(123deg, var(--container-bg) 70%, var(--container-alt) 100%);
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      padding: 2.2rem 1.8rem 1.8rem 1.8rem;
-      border: 1.5px solid var(--border);
-      transition: transform 0.18s;
-    }
+/* ======== Projects Section ======== */
+.project {
+  margin-bottom: 2rem;
+}
+.project h3 {
+  color: #facc15;
+}
+.project-links a {
+  display: inline-block;
+  margin-right: 10px;
+  font-weight: 600;
+}
+.project:hover {
+  background: rgba(51, 65, 85, 0.7);
+  border-radius: 1rem;
+  padding: 1rem;
+  transition: 0.3s ease;
+}
 
-    .colorful-container:hover {
-      transform: scale(1.017);
-      box-shadow: 0 8px 40px #14112f66;
-    }
+/* ======== Contact Section ======== */
+.contact-links a {
+  display: inline-block;
+  margin-right: 1.2rem;
+  font-size: 1.1rem;
+}
 
-    .header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 2rem;
-    }
+/* ======== Fade-in Animation ======== */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+</style>
 
-    .avatar {
-      border-radius: 50%;
-      border: 3px solid var(--primary);
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      box-shadow: 0 2px 16px #ffd36d44;
-      background: #fff;
-    }
+<section class="fade-in">
+  <h1>👋 Hi, I'm <span>Weldon Kipkoech</span></h1>
+  <p><strong>Data Scientist | AI Explorer | Software Engineer</strong></p>
+  <p>🚀 Blending data, code, and creativity to build smart, beautiful things.</p>
+</section>
 
-    h1 {
-      font-family: 'Bungee', cursive;
-      color: var(--primary);
-      font-size: 2.6rem;
-      margin: 0 0 8px 0;
-      letter-spacing: 2px;
-      text-shadow: 2px 2px 0 #332d6433, 0 2px 8px #ffd36d33;
-    }
+<section class="fade-in">
+  <h2>🎯 About Me</h2>
+  <p>I'm a passionate explorer in <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Data Analysis</strong>. My coding journey is a fusion of creativity and logic—mastering both the art of user experiences and the science of intelligent models.</p>
+  <ul>
+    <li>🎨 <strong>Frontend Alchemist:</strong> Crafting immersive user interfaces with React, CSS, and HTML</li>
+    <li>🤖 <strong>Machine Learning Maestro:</strong> Building models that learn, predict, and evolve</li>
+    <li>💡 <strong>Innovator:</strong> Driven to push the boundaries with code and data</li>
+  </ul>
+</section>
 
-    .subtitle {
-      color: var(--secondary);
-      font-family: 'Bubblegum Sans', cursive;
-      font-size: 1.25rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .tagline {
-      color: var(--primary);
-      font-size: 1.18rem;
-      font-family: 'Bubblegum Sans', cursive;
-      margin-bottom: 0.9rem;
-    }
-
-    .section-title {
-      color: var(--secondary);
-      font-family: 'Bungee', cursive;
-      font-size: 1.5rem;
-      margin-top: 0;
-      margin-bottom: 1.1rem;
-      letter-spacing: 1px;
-      text-shadow: 0 1px 8px #e9456055;
-    }
-
-    ul, li {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 0.1em;
-    }
-
-    .badges {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px 12px;
-      margin-top: 0.8rem;
-    }
-
-    .badges img {
-      background: var(--badge-bg);
-      border-radius: var(--badge-radius);
-      box-shadow: 0 2px 8px #17113344;
-      padding: 5px 0;
-      height: 34px;
-    }
-
-    .featured-project {
-      background: linear-gradient(95deg, #e94560 30%, #ffd36d 100%);
-      color: #18122b;
-      border-radius: 14px;
-      padding: 1.1rem 1rem;
-      margin-bottom: 0.8rem;
-      box-shadow: 0 2px 16px #e9456035;
-    }
-
-    .featured-project a {
-      color: #18122b;
-      font-weight: bold;
-      text-decoration: underline wavy;
-    }
-
-    .contact-links a {
-      color: var(--accent);
-      font-weight: bold;
-      text-decoration: underline dashed;
-      margin-right: 10px;
-      transition: color 0.15s;
-    }
-
-    .contact-links a:hover {
-      color: var(--primary);
-    }
-
-    @media (max-width: 700px) {
-      .header { flex-direction: column; gap: 0.5rem; }
-      .avatar { width: 70px; height: 70px; }
-      h1 { font-size: 1.6rem; }
-      .section-title { font-size: 1.15rem; }
-    }
-  </style>
-</head>
-
-<body>
-  <div class="main-container">
-
-    <!-- Header -->
-    <div class="colorful-container">
-      <div class="header">
-        <img src="assets/profile.jpg" alt="Caroline Murithi" class="avatar">
-        <div>
-          <h1>👋 Hi, I'm Caroline Murithi</h1>
-          <div class="subtitle">Data Analyst | Machine Learning Enthusiast | Innovator</div>
-          <div class="tagline">💡 Turning data into decisions that inspire action.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- About -->
-    <div class="colorful-container">
-      <div class="section-title">About Me</div>
-      <p>
-        I'm a passionate <b>data-driven problem solver</b> who loves uncovering insights and patterns from information. 
-        I thrive at the intersection of <b>data analytics, visualization, and machine learning</b> — translating complex numbers into meaningful narratives.
-      </p>
-      <ul>
-        <li>📈 <b>Data Storyteller:</b> Visualizing insights that drive impact</li>
-        <li>🤖 <b>Machine Learning Enthusiast:</b> Exploring predictive and classification models</li>
-        <li>🎯 <b>Detail-Oriented:</b> Always curious about the "why" behind the data</li>
-      </ul>
-    </div>
-
-    <!-- Skills -->
-    <div class="colorful-container">
-      <div class="section-title">🛠️ Skills</div>
-      <ul>
-        <li>Python (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn)</li>
-        <li>Data Visualization (Power BI, Tableau)</li>
-        <li>SQL for Data Extraction and Manipulation</li>
-        <li>Machine Learning: Regression, Classification, Clustering</li>
-      </ul>
-      <div class="badges">
-        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" />
-        <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge" />
-        <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" />
-        <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge" />
-        <img src="https://img.shields.io/badge/PowerBI-F2C811?logo=powerbi&logoColor=black&style=for-the-badge" />
-        <img src="https://img.shields.io/badge/SQL-003B57?logo=sqlite&logoColor=white&style=for-the-badge" />
-        <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" />
-      </div>
-    </div>
-
-    <!-- Projects -->
-    <div class="colorful-container">
-      <div class="section-title">🌟 Projects</div>
-
-      <div class="featured-project">
-        <b>HR Dashboard</b><br>
-        An interactive Power BI dashboard visualizing sales performance, top regions, and growth metrics.<br>
-        <a href="#">📊 View Dashboard</a>
-      </div>
-
-
-
-    <!-- Collaborate -->
-    <div class="colorful-container">
-      <div class="section-title">🤝 Let's Collaborate!</div>
-      <p>
-        I'm open to data analytics projects, collaborations, or internships that challenge me to grow and innovate.  
-        Together, we can transform data into smarter decisions.
-      </p>
-    </div>
-
-    <!-- Contact -->
-    <div class="colorful-container">
-      <div class="section-title">🔗 Connect With Me</div>
-      <div class="contact-links">
-        <a href="mailto:carolinemurithi@email.com">Email</a>
-        <a href="https://github.com/carolinemurithi" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/carolinemurithi" target="_blank">LinkedIn</a>
-        <a href="https://www.kaggle.com/carolinemurithi" target="_blank">Kaggle</a>
-      </div>
-    </div>
-
+<section class="fade-in">
+  <h2>🛠️ Skills</h2>
+  <div class="badges">
+    <img src="https://img.shields.io/badge/Matplotlib-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Matplotlib">
+    <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" alt="NumPy">
+    <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge" alt="Pandas">
+    <img src="https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white&style=for-the-badge" alt="Plotly">
+    <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" alt="MongoDB">
+    <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge" alt="Bootstrap">
+    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" alt="React">
+    <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" alt="TailwindCSS">
+    <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=for-the-badge" alt="Vercel">
+    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub">
+    <img src="https://img.shields.io/badge/Trello-0052CC?logo=trello&logoColor=white&style=for-the-badge" alt="Trello">
   </div>
-</body>
-</html>
+</section>
+
+<section class="fade-in">
+  <h2>🌟 Projects</h2>
+
+  <div class="project">
+    <h3>Netflix Data Analysis</h3>
+    <p>Comprehensive exploration of Netflix’s catalog with insights on genres, trends, and more using Python, Pandas, and visualizations.</p>
+    <div class="project-links">
+      🔗 <a href="https://www.kaggle.com/code/weldonsitienei/weldon-kipkoech-cs-da02-25064" target="_blank">View on Kaggle</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Hotel Performance Analytics Dashboard</h3>
+    <p>Dashboard analyzing hotel revenue, occupancy, and operational KPIs across multiple luxury properties.</p>
+    <div class="project-links">
+      📊 <a href="https://www.kaggle.com/code/weldonsitienei/Business-Intelligence_POWER-BI" target="_blank">View on Kaggle</a>
+      💾 <a href="https://drive.google.com/file/d/1LxvqWB4g5RawkIOVFaLrMnh07KIFDw0N/view?usp=drive_link" target="_blank">Download PBIX File</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Exploratory Titanic Dataset EDA</h3>
+    <p>Analyzed survival trends based on gender, class, and age using visual storytelling.</p>
+    <div class="project-links">
+      🌐 <a href="https://www.kaggle.com/code/weldonsitienei/weldon-kipkoech-eda" target="_blank">View on Kaggle</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>HR Analytics Dashboard (Tableau)</h3>
+    <p>Interactive Tableau dashboard visualizing HR metrics like turnover and job satisfaction.</p>
+    <div class="project-links">
+      🌐 <a href="https://public.tableau.com/views/HRDashboard_17607540673410/HRSummary?:language=en-US" target="_blank">View on Tableau Public</a>
+      📁 <a href="https://github.com/weldonkipkoech/Data-Visualization-with-Tableau/blob/main/HR%20DASHBOARD.twbx" target="_blank">Download Tableau File</a>
+    </div>
+  </div>
+
+  <div class="project">
+    <h3>Regression Models (Linear & Multivariate)</h3>
+    <p>Predicted housing prices using regression models based on area, bedrooms, and age.</p>
+    <div class="project-links">
+      🌐 <a href="https://colab.research.google.com/drive/1Qz4xi_J7Ul4QsjTKGcfzV2xIFfWO_WDr?usp=sharing" target="_blank">View on Google Colab</a>
+      📄 <a href="assets/Weldon_Kipkoech-CS-DA02-25064-Regression Models.pdf" target="_blank">View Report (PDF)</a>
+    </div>
+  </div>
+
+  <p>➡️ See more on my <a href="https://weldonkipkoech.github.io/projects/" target="_blank"><strong>Projects Page</strong></a>.</p>
+</section>
+
+<section class="fade-in">
+  <h2>🤝 Let's Collaborate!</h2>
+  <p>I'm always open to collaborative projects and open-source contributions. Got an idea or want to geek out on tech? Let's connect!</p>
+</section>
+
+<section class="fade-in">
+  <h2>🔗 Connect With Me</h2>
+  <div class="contact-links">
+    📧 <a href="mailto:weldonkipkoech@email.com">Email</a>  
+    💻 <a href="https://github.com/weldonkipkoech" target="_blank">GitHub</a>  
+    📈 <a href="https://www.kaggle.com/weldonsitienei" target="_blank">Kaggle</a>
+  </div>
+</section>
+
+<script>
+// Simple smooth fade-in animation
+document.querySelectorAll('.fade-in').forEach((el, i) => {
+  el.style.animationDelay = `${i * 0.2}s`;
+});
+</script>
