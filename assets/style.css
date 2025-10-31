@@ -1,0 +1,120 @@
+:root {
+  --primary: #ffd36d;
+  --secondary: #e94560;
+  --accent: #14ffec;
+  --bg: #18122b;
+  --container-bg: #221e3a;
+  --container-alt: #232d4b;
+  --border: #3c3752;
+  --shadow: 0 6px 32px rgba(44, 30, 92, 0.24);
+  --sep: #332d64;
+  --badge-bg: #23214b;
+  --badge-radius: 10px;
+}
+
+/* Reset and base layout */
+html, body {
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #1f1d3a 0%, #3f3351 100%);
+  font-family: 'Roboto', 'Bubblegum Sans', cursive, sans-serif;
+  color: #fff;
+  min-height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Container layout */
+.main-container {
+  width: 98%;
+  max-width: 970px;
+  margin: 2.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+/* Card-like containers */
+.colorful-container {
+  background: linear-gradient(123deg, var(--container-bg) 70%, var(--container-alt) 100%);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  padding: 2.2rem 1.8rem 1.8rem 1.8rem;
+  border: 1.5px solid var(--border);
+  margin-bottom: 1.1rem;
+  transition: transform 0.18s;
+}
+
+.colorful-container:hover {
+  transform: scale(1.017);
+  box-shadow: 0 8px 40px #14112f66;
+}
+
+/* Header section */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.avatar {
+  border-radius: 50%;
+  border: 3px solid var(--primary);
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  box-shadow: 0 2px 16px #ffd36d44;
+  background: #fff;
+}
+
+/* Typography */
+h1 {
+  font-family: 'Bungee', cursive, sans-serif;
+  color: var(--primary);
+  font-size: 2.6rem;
+  margin: 0 0 8px 0;
+  letter-spacing: 2px;
+  text-shadow: 2px 2px 0 #332d6433, 0 2px 8px #ffd36d33;
+}
+
+.subtitle {
+  color: var(--secondary);
+  font-family: 'Bubblegum Sans', cursive, sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.2rem;
+}
+
+.tagline {
+  color: var(--primary);
+  font-size: 1.18rem;
+  font-family: 'Bubblegum Sans', cursive, sans-serif;
+  margin-bottom: 0.9rem;
+}
+
+.section-title {
+  color: var(--secondary);
+  font-family: 'Bungee', cursive, sans-serif;
+  font-size: 1.5rem;
+  margin-top: 0;
+  margin-bottom: 1.1rem;
+  letter-spacing: 1px;
+  text-shadow: 0 1px 8px #e9456055;
+}
+
+/* Lists */
+ul, li {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  margin-bottom: 0.1em;
+}
+
+/* Featured Projects */
+.featured-project {
+  background: linear-gradient(95deg,
