@@ -1,6 +1,5 @@
 ---
 title: "Netflix Data Wrangling and Cleaning"
-date: 2025-09-22
 categories: [Projects, Data Analytics]
 tags: [Python, Pandas, Google Colab, Kaggle]
 ---
