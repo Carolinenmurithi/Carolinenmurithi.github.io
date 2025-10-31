@@ -4,7 +4,7 @@ categories: [Projects, Data Analytics]
 tags: [Python, Pandas, Google Colab, Kaggle]
 ---
 
-## 🧩 Netflix Data Wrangling and Cleaning  
+## 🧩 Netflix Data Wrangling and Cleaning 
 **Date:** September 2025  
 **Tools:** Python, Pandas, Google Colab  
 
