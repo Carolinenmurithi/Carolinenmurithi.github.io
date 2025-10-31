@@ -1,240 +1,160 @@
 ---
 layout: default
-title: "Home"
+title: "HOME"
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>{{ page.title }} | Caroline Murithi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caroline Murithi | Data & AI Portfolio</title>
 
   <style>
     body {
+      background-color: #0e0e0e;
+      color: #eaeaea;
       font-family: "Poppins", sans-serif;
-      background: linear-gradient(135deg, #0d1117, #161b22);
-      color: #e6edf3;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 2rem;
     }
 
     header {
       text-align: center;
-      padding: 4rem 1rem;
-      background: linear-gradient(135deg, #0077b6, #00b4d8);
-      border-radius: 12px;
-      color: white;
-      box-shadow: 0 6px 25px rgba(0, 180, 216, 0.3);
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-bottom: 2px solid #333;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
-      font-weight: 700;
-      letter-spacing: 1px;
+      font-size: 1.8rem;
+      margin: 0;
+      color: #00adb5;
     }
 
     header p {
-      font-size: 1.2rem;
-      opacity: 0.9;
+      font-size: 0.9rem;
+      color: #bbb;
+      margin: 5px 0 0;
     }
 
-    section {
-      background: #161b22;
-      margin-top: 2rem;
-      padding: 1.8rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    section:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+    .container {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 15px;
+      background-color: #1c1c1c;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     h2 {
-      color: #00b4d8;
-      border-left: 5px solid #0077b6;
-      padding-left: 10px;
-      margin-bottom: 1rem;
-      font-weight: 600;
+      color: #00adb5;
+      font-size: 1.2rem;
+      border-bottom: 1px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1rem;
+      color: #f5f5f5;
+    }
+
+    p, li {
+      font-size: 0.85rem;
+      line-height: 1.4;
+      color: #ccc;
     }
 
     ul {
-      list-style: none;
-      padding: 0;
-    }
-
-    ul li {
-      background: #0d1117;
-      padding: 1rem;
-      margin-bottom: 0.8rem;
-      border-left: 4px solid #00b4d8;
-      border-radius: 6px;
-    }
-
-    .skills span {
-      display: inline-block;
-      background: #0077b6;
-      color: white;
-      padding: 8px 14px;
-      margin: 5px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      transition: background 0.2s ease;
-    }
-
-    .skills span:hover {
-      background: #00b4d8;
-    }
-
-    a {
-      color: #00b4d8;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: #90e0ef;
+      list-style-type: square;
+      padding-left: 20px;
     }
 
     footer {
       text-align: center;
-      margin-top: 3rem;
-      padding: 1.5rem;
-      color: #8b949e;
-      border-top: 1px solid #21262d;
-      font-size: 0.9rem;
+      color: #777;
+      font-size: 0.8rem;
+      padding: 10px;
+      margin-top: 20px;
+      border-top: 1px solid #333;
     }
 
-    .contact a {
-      display: inline-block;
-      margin-right: 10px;
-      padding: 8px 14px;
-      border-radius: 6px;
-      background: #21262d;
-      transition: background 0.2s ease;
+    a {
+      color: #00adb5;
+      text-decoration: none;
     }
 
-    .contact a:hover {
-      background: #0077b6;
-      color: #fff;
-    }
-
-    @media (max-width: 768px) {
-      header h1 {
-        font-size: 1.8rem;
-      }
-      header p {
-        font-size: 1rem;
-      }
-      .container {
-        padding: 1rem;
-      }
-      section {
-        padding: 1rem;
-      }
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <h1>Caroline Murithi</h1>
+    <p>Data & AI Enthusiast | ICT Specialist</p>
+  </header>
+
   <div class="container">
-    <header>
-      <h1>Caroline Murithi</h1>
-      <p>Data Analyst | Machine Learning Enthusiast | Tech Innovator</p>
-    </header>
-
-    <section>
-      <h2>👩‍💻 About Me</h2>
-      <p>
-        I’m a passionate <strong>data and technology enthusiast</strong> who loves discovering
-        insights from data, building predictive models, and creating innovative solutions.
-        My focus lies in leveraging data analytics and machine learning to drive meaningful impact.
-      </p>
-    </section>
-
-    <section>
-      <h2>🎓 Academic Background</h2>
-      <ul>
-        <li><strong>Bachelor of Business Information Technology (BBIT)</strong> — KCA University</li>
-        <li><strong>Currently Pursuing:</strong> Cyber Shujaa Data & AI Program</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>💼 Work Experience</h2>
-      <ul>
-        <li>
-          <strong>ICT Department Intern</strong> — KALRO Headquarters<br />
-          Supported IT systems maintenance, troubleshooting, and data management.
-        </li>
-        <li>
-          <strong>IT Technician & Accounting Assistant</strong> — Eastern Ark Hotel & Conference Centre<br />
-          Provided IT support, managed accounting systems, and prepared financial reports.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🚀 Projects</h2>
-      <ul>
-        <li>
-          <strong>Sales Performance Dashboard</strong> — Power BI<br />
-          Built an interactive dashboard analyzing sales trends, top products, and KPIs.
-        </li>
-        <li>
-          <strong>Customer Churn Prediction</strong> — Python & Scikit-learn<br />
-          Developed a predictive model to identify customers likely to churn.
-        </li>
-        <li>
-          <strong>Employee Performance Analytics</strong> — Tableau<br />
-          Created visual reports on employee productivity and efficiency.
-        </li>
-        <li>
-          <strong>Retail Data Insights</strong> — SQL<br />
-          Queried and visualized data to reveal purchasing patterns and trends.
-        </li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>🧠 Skills</h2>
-      <div class="skills">
-        <span>Python</span>
-        <span>Power BI</span>
-        <span>Excel</span>
-        <span>SQL</span>
-        <span>Machine Learning</span>
-        <span>Data Visualization</span>
-        <span>Problem Solving</span>
-        <span>Team Collaboration</span>
-      </div>
-    </section>
-
-    <section class="contact">
-      <h2>📬 Contact</h2>
-      <p>Let's collaborate or connect!</p>
-      <a href="mailto:carolinemurithi@email.com">📧 Email</a>
-      <a href="https://github.com/carolinemurithi" target="_blank">💻 GitHub</a>
-      <a href="https://www.linkedin.com/in/carolinemurithi" target="_blank">💼 LinkedIn</a>
-    </section>
-
-    <footer>
-      <p>© 2025 Caroline Murithi | Built with ❤️ and data</p>
-    </footer>
+    <h2>🎓 Academic Background</h2>
+    <p><strong>Bachelor of Business Information Technology (BBIT)</strong> — KCA University</p>
+    <p><strong>Currently Pursuing:</strong> Data and AI Program</p>
   </div>
+
+  <div class="container">
+    <h2>💼 Work Experience</h2>
+    <h3>ICT Department Intern — KALRO Headquarters</h3>
+    <ul>
+      <li>Assisted in system maintenance, software updates, and troubleshooting.</li>
+      <li>Supported data management and reporting tasks for internal projects.</li>
+    </ul>
+
+    <h3>IT Technician & Accounting Assistant — Eastern Ark Hotel & Conference Centre</h3>
+    <ul>
+      <li>Managed IT infrastructure, user support, and system configurations.</li>
+      <li>Provided accounting support through data entry, reconciliations, and report generation.</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>🧾 Certifications</h2>
+    <ul>
+      <li>Cyber Shujaa Data & AI Program (Ongoing)</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>🧠 Skills</h2>
+    <ul>
+      <li>Data Analysis (Python, Power BI, Excel, SQL)</li>
+      <li>Machine Learning & Deep Learning</li>
+      <li>IT Support & Troubleshooting</li>
+      <li>Data Visualization & Reporting</li>
+      <li>Problem Solving & Team Collaboration</li>
+    </ul>
+  </div>
+
+  <div class="container">
+    <h2>🧩 Projects</h2>
+    <h3>Netflix Data Wrangling and Cleaning</h3>
+    <p><strong>Date:</strong> September 2025</p>
+    <p><strong>Tools:</strong> Python, Pandas, Google Colab</p>
+    <p>This project focused on <strong>data wrangling</strong> and <strong>cleaning</strong> the Netflix dataset from Kaggle. 
+    The goal was to prepare and validate the dataset for accurate analysis and visualization.</p>
+
+    <p><strong>Key Steps:</strong></p>
+    <ul>
+      <li>Imported and explored the dataset using Pandas</li>
+      <li>Handled missing values, duplicates, and inconsistent formats</li>
+      <li>Created new features such as <code>duration_value</code> and <code>duration_unit</code></li>
+      <li>Validated and exported the cleaned dataset as <code>netflix_clean.csv</code></li>
+    </ul>
+  </div>
+
+  <footer>
+    <p>© 2025 Caroline Murithi. All rights reserved.</p>
+  </footer>
 </body>
 </html>
