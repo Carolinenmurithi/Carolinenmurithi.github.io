@@ -4,7 +4,7 @@ icon: fas fa-project-diagram
 order: 3
 ---
 
-Here are some of my featured Data & AI projects from coursework and practice.
+Here are some of my featured Data & AI projects.
 
-{% include_relative _includes/projects.html %}
+{% include_relative ../_projects %}
 
