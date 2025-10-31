@@ -1,7 +1,7 @@
 ---
-title: "Netflix Data Wrangling and Cleaning"
-categories: [Projects, Data Analytics]
-tags: [Python, Pandas, Google Colab, Kaggle]
+title: "PROJECTS"
+icon: fas fa-rocket
+layout: default
 ---
 
 ## 🧩 Netflix Data Wrangling and Cleaning 
