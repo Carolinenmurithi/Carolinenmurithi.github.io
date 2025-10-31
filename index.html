@@ -1,237 +1,240 @@
 ---
-layout: "default"
-title: "HOME"
+layout: default
+title: "Home"
 ---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Caroline Murithi | Data & AI Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bubblegum+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }} | Caroline Murithi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
-    :root {
-      --primary: #ffd36d;
-      --secondary: #ff6b6b;
-      --accent: #14ffec;
-      --bg: #18122b;
-      --container-bg: #221e3a;
-      --container-alt: #232d4b;
-      --border: #3c3752;
-      --shadow: 0 6px 32px rgba(44,30,92,0.24);
-      --sep: #332d64;
-      --badge-bg: #23214b;
-      --badge-radius: 10px;
-    }
-    html, body {
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #0d1117, #161b22);
+      color: #e6edf3;
       margin: 0;
       padding: 0;
-      background: linear-gradient(120deg, #1f1d3a 0%, #3f3351 100%);
-      font-family: 'Roboto', 'Bubblegum Sans', cursive, sans-serif;
-      color: #fff;
-      min-height: 100vh;
-      width: 100vw;
-      box-sizing: border-box;
+      line-height: 1.6;
     }
-    body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
     }
-    .main-container {
-      width: 98%;
-      max-width: 970px;
-      margin: 2.5rem 0;
-      display: flex;
-      flex-direction: column;
-      gap: 1.6rem;
+
+    header {
+      text-align: center;
+      padding: 4rem 1rem;
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      border-radius: 12px;
+      color: white;
+      box-shadow: 0 6px 25px rgba(0, 180, 216, 0.3);
     }
-    .colorful-container {
-      background: linear-gradient(123deg, var(--container-bg) 70%, var(--container-alt) 100%);
-      border-radius: 20px;
-      box-shadow: var(--shadow);
-      padding: 2.2rem 1.8rem 1.8rem 1.8rem;
-      border: 1.5px solid var(--border);
-      margin-bottom: 1.1rem;
-      transition: transform 0.18s;
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+      letter-spacing: 1px;
     }
-    .colorful-container:hover {
-      transform: scale(1.017);
-      box-shadow: 0 8px 40px #14112f66;
-    }
-    .header {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      gap: 2rem;
-    }
-    .avatar {
-      border-radius: 50%;
-      border: 3px solid var(--primary);
-      width: 100px;
-      height: 100px;
-      object-fit: cover;
-      box-shadow: 0 2px 16px #ffd36d44;
-      background: #fff;
-    }
-    h1 {
-      font-family: 'Bungee', cursive, sans-serif;
-      color: var(--primary);
-      font-size: 2.4rem;
-      margin: 0 0 8px 0;
-      letter-spacing: 1.5px;
-      text-shadow: 2px 2px 0 #332d6433, 0 2px 8px #ffd36d33;
-    }
-    .subtitle {
-      color: var(--secondary);
-      font-family: 'Bubblegum Sans', cursive, sans-serif;
+
+    header p {
       font-size: 1.2rem;
-      margin-bottom: 0.3rem;
+      opacity: 0.9;
     }
-    .tagline {
-      color: var(--primary);
-      font-size: 1.1rem;
-      font-family: 'Bubblegum Sans', cursive, sans-serif;
-      margin-bottom: 0.9rem;
+
+    section {
+      background: #161b22;
+      margin-top: 2rem;
+      padding: 1.8rem;
+      border-radius: 12px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .section-title {
-      color: var(--secondary);
-      font-family: 'Bungee', cursive, sans-serif;
-      font-size: 1.4rem;
-      margin-bottom: 1.1rem;
-      text-shadow: 0 1px 8px #e9456055;
+
+    section:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
     }
-    ul, li {
-      font-size: 1.05rem;
-      line-height: 1.7;
-      margin-bottom: 0.2em;
+
+    h2 {
+      color: #00b4d8;
+      border-left: 5px solid #0077b6;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+      font-weight: 600;
     }
-    .featured-project {
-      background: linear-gradient(95deg, #ff6b6b 30%, #ffd36d 100%);
-      color: #18122b;
-      border-radius: 14px;
-      padding: 1.1rem 1rem;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      background: #0d1117;
+      padding: 1rem;
       margin-bottom: 0.8rem;
-      box-shadow: 0 2px 16px #e9456035;
+      border-left: 4px solid #00b4d8;
+      border-radius: 6px;
     }
-    .featured-project a {
-      color: #18122b;
-      font-weight: bold;
-      text-decoration: underline wavy;
+
+    .skills span {
+      display: inline-block;
+      background: #0077b6;
+      color: white;
+      padding: 8px 14px;
+      margin: 5px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: background 0.2s ease;
     }
-    .contact-links a {
-      color: var(--accent);
-      font-weight: bold;
-      text-decoration: underline dashed;
+
+    .skills span:hover {
+      background: #00b4d8;
+    }
+
+    a {
+      color: #00b4d8;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #90e0ef;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem;
+      color: #8b949e;
+      border-top: 1px solid #21262d;
+      font-size: 0.9rem;
+    }
+
+    .contact a {
+      display: inline-block;
       margin-right: 10px;
-      transition: color 0.15s;
+      padding: 8px 14px;
+      border-radius: 6px;
+      background: #21262d;
+      transition: background 0.2s ease;
     }
-    .contact-links a:hover {
-      color: var(--primary);
+
+    .contact a:hover {
+      background: #0077b6;
+      color: #fff;
     }
-    @media (max-width: 700px) {
-      .header {
-        flex-direction: column;
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
       }
-      .avatar {
-        width: 65px;
-        height: 65px;
+      header p {
+        font-size: 1rem;
+      }
+      .container {
+        padding: 1rem;
+      }
+      section {
+        padding: 1rem;
       }
     }
   </style>
 </head>
+
 <body>
-  <div class="main-container">
+  <div class="container">
+    <header>
+      <h1>Caroline Murithi</h1>
+      <p>Data Analyst | Machine Learning Enthusiast | Tech Innovator</p>
+    </header>
 
-    <!-- Header -->
-    <div class="colorful-container">
-      <div class="header">
-        <img src="assets/caroline.jpg" alt="Caroline Murithi" class="avatar">
-        <div>
-          <h1>👋 Hi, I'm Caroline Murithi</h1>
-          <div class="subtitle">Data Analyst | AI Enthusiast | Tech Innovator</div>
-          <div class="tagline">💡 Exploring insights, automation, and innovation through data.</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- About -->
-    <div class="colorful-container">
-      <div class="section-title">About Me</div>
+    <section>
+      <h2>👩‍💻 About Me</h2>
       <p>
-        I’m a <strong>data and technology enthusiast</strong> passionate about turning raw data into actionable insights.
-        My goal is to empower smarter decisions using data analysis, AI, and visualization tools.
+        I’m a passionate <strong>data and technology enthusiast</strong> who loves discovering
+        insights from data, building predictive models, and creating innovative solutions.
+        My focus lies in leveraging data analytics and machine learning to drive meaningful impact.
       </p>
-    </div>
+    </section>
 
-    <!-- Education -->
-    <div class="colorful-container">
-      <div class="section-title">🎓 Academic Background</div>
+    <section>
+      <h2>🎓 Academic Background</h2>
       <ul>
         <li><strong>Bachelor of Business Information Technology (BBIT)</strong> — KCA University</li>
         <li><strong>Currently Pursuing:</strong> Cyber Shujaa Data & AI Program</li>
       </ul>
-    </div>
+    </section>
 
-    <!-- Experience -->
-    <div class="colorful-container">
-      <div class="section-title">💼 Work Experience</div>
+    <section>
+      <h2>💼 Work Experience</h2>
       <ul>
-        <li><strong>ICT Department Intern — KALRO Headquarters</strong><br>
-          Assisted with system maintenance, troubleshooting, and data management operations.
+        <li>
+          <strong>ICT Department Intern</strong> — KALRO Headquarters<br />
+          Supported IT systems maintenance, troubleshooting, and data management.
         </li>
-        <li><strong>IT Technician & Accounting Assistant — Eastern Ark Hotel & Conference Centre</strong><br>
-          Provided user support, managed ICT systems, and assisted with accounting reports.
+        <li>
+          <strong>IT Technician & Accounting Assistant</strong> — Eastern Ark Hotel & Conference Centre<br />
+          Provided IT support, managed accounting systems, and prepared financial reports.
         </li>
       </ul>
-    </div>
+    </section>
 
-    <!-- Projects -->
-    <div class="colorful-container">
-      <div class="section-title">🧩 Projects</div>
-      <div class="featured-project">
-        <b>Netflix Data Wrangling and Cleaning</b><br>
-        <strong>Date:</strong> September 2025<br>
-        <strong>Tools:</strong> Python, Pandas, Google Colab<br><br>
-        Cleaned and transformed Netflix dataset from Kaggle for reliable analysis and visualization.<br>
-        <ul>
-          <li>Handled missing values and duplicates</li>
-          <li>Created new columns like <code>duration_value</code> & <code>duration_unit</code></li>
-          <li>Exported cleaned dataset as <code>netflix_clean.csv</code></li>
-        </ul>
-      </div>
-      <div class="featured-project">
-        <b>Customer Churn Prediction</b><br>
-        Developed an ML model using Python & Scikit-learn to predict customer churn.
-      </div>
-      <div class="featured-project">
-        <b>Sales Performance Dashboard</b><br>
-        Designed a Power BI dashboard analyzing KPIs and sales trends.
-      </div>
-    </div>
-
-    <!-- Skills -->
-    <div class="colorful-container">
-      <div class="section-title">🧠 Skills</div>
+    <section>
+      <h2>🚀 Projects</h2>
       <ul>
-        <li>Data Analysis (Python, Power BI, Excel, SQL)</li>
-        <li>Machine Learning & Deep Learning</li>
-        <li>IT Support & Troubleshooting</li>
-        <li>Data Visualization & Reporting</li>
-        <li>Problem Solving & Team Collaboration</li>
+        <li>
+          <strong>Sales Performance Dashboard</strong> — Power BI<br />
+          Built an interactive dashboard analyzing sales trends, top products, and KPIs.
+        </li>
+        <li>
+          <strong>Customer Churn Prediction</strong> — Python & Scikit-learn<br />
+          Developed a predictive model to identify customers likely to churn.
+        </li>
+        <li>
+          <strong>Employee Performance Analytics</strong> — Tableau<br />
+          Created visual reports on employee productivity and efficiency.
+        </li>
+        <li>
+          <strong>Retail Data Insights</strong> — SQL<br />
+          Queried and visualized data to reveal purchasing patterns and trends.
+        </li>
       </ul>
-    </div>
+    </section>
 
-    <!-- Contact -->
-    <div class="colorful-container">
-      <div class="section-title">🔗 Connect With Me</div>
-      <div class="contact-links">
-        <a href="mailto:carolinemurithi@email.com">Email</a>
-        <a href="https://github.com/carolinemurithi" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/carolinemurithi" target="_blank">LinkedIn</a>
+    <section>
+      <h2>🧠 Skills</h2>
+      <div class="skills">
+        <span>Python</span>
+        <span>Power BI</span>
+        <span>Excel</span>
+        <span>SQL</span>
+        <span>Machine Learning</span>
+        <span>Data Visualization</span>
+        <span>Problem Solving</span>
+        <span>Team Collaboration</span>
       </div>
-    </div>
+    </section>
 
+    <section class="contact">
+      <h2>📬 Contact</h2>
+      <p>Let's collaborate or connect!</p>
+      <a href="mailto:carolinemurithi@email.com">📧 Email</a>
+      <a href="https://github.com/carolinemurithi" target="_blank">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/carolinemurithi" target="_blank">💼 LinkedIn</a>
+    </section>
+
+    <footer>
+      <p>© 2025 Caroline Murithi | Built with ❤️ and data</p>
+    </footer>
   </div>
 </body>
 </html>
