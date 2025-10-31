@@ -1,160 +1,335 @@
 ---
-layout: default
+layout: "default"
 title: "HOME"
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Caroline Murithi | Data & AI Portfolio</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Weldon Kipkoech | Portfolio</title>
+  <!-- Google Fonts: Bungee, Bubblegum Sans, and Roboto -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bubblegum+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
-      background-color: #0e0e0e;
-      color: #eaeaea;
-      font-family: "Poppins", sans-serif;
+    :root {
+      --primary: #ffd36d;
+      --secondary: #e94560;
+      --accent: #14ffec;
+      --bg: #18122b;
+      --container-bg: #221e3a;
+      --container-alt: #232d4b;
+      --border: #3c3752;
+      --shadow: 0 6px 32px rgba(44,30,92,0.24);
+      --sep: #332d64;
+      --badge-bg: #23214b;
+      --badge-radius: 10px;
+    }
+    html, body {
       margin: 0;
       padding: 0;
+      background: linear-gradient(120deg, #1f1d3a 0%, #3f3351 100%);
+      font-family: 'Roboto', 'Bubblegum Sans', cursive, sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      width: 100vw;
+      box-sizing: border-box;
     }
-
-    header {
-      text-align: center;
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-bottom: 2px solid #333;
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-
-    header h1 {
-      font-size: 1.8rem;
-      margin: 0;
-      color: #00adb5;
+    .main-container {
+      width: 98%;
+      max-width: 970px;
+      margin: 2.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
     }
-
-    header p {
-      font-size: 0.9rem;
-      color: #bbb;
-      margin: 5px 0 0;
+    .colorful-container {
+      background: linear-gradient(123deg, var(--container-bg) 70%, var(--container-alt) 100%);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 2.2rem 1.8rem 1.8rem 1.8rem;
+      border: 1.5px solid var(--border);
+      margin-bottom: 1.1rem;
+      transition: transform 0.18s;
     }
-
-    .container {
-      max-width: 800px;
-      margin: 20px auto;
-      padding: 15px;
-      background-color: #1c1c1c;
+    .colorful-container:hover {
+      transform: scale(1.017);
+      box-shadow: 0 8px 40px #14112f66;
+    }
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+    }
+    .avatar {
+      border-radius: 50%;
+      border: 3px solid var(--primary);
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      box-shadow: 0 2px 16px #ffd36d44;
+      background: #fff;
+    }
+    h1 {
+      font-family: 'Bungee', cursive, sans-serif;
+      color: var(--primary);
+      font-size: 2.6rem;
+      margin: 0 0 8px 0;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 #332d6433, 0 2px 8px #ffd36d33;
+    }
+    .subtitle {
+      color: var(--secondary);
+      font-family: 'Bubblegum Sans', cursive, sans-serif;
+      font-size: 1.25rem;
+      margin-bottom: 0.2rem;
+    }
+    .tagline {
+      color: var(--primary);
+      font-size: 1.18rem;
+      font-family: 'Bubblegum Sans', cursive, sans-serif;
+      margin-bottom: 0.9rem;
+    }
+    .section-title {
+      color: var(--secondary);
+      font-family: 'Bungee', cursive, sans-serif;
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 1.1rem;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 8px #e9456055;
+    }
+    .section-sep {
+      border: none;
+      border-top: 2px dashed var(--sep);
+      margin: 32px 0 28px 0;
+    }
+    ul, li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 0.1em;
+    }
+    .skills-list li, .projects-list li {
+      margin-bottom: 0.2em;
+    }
+    .badges {
+      margin: 0.7rem 0 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+    }
+    .badges img {
+      background: var(--badge-bg);
+      border-radius: var(--badge-radius);
+      box-shadow: 0 2px 8px #17113344;
+      padding: 5px 0;
+      height: 34px;
+    }
+    .github-stats {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+    .github-stats img {
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+      background: var(--badge-bg);
+      padding: 8px 0;
+      max-width: 100%;
+      height: auto;
+      box-shadow: 0 2px 12px #17113344;
     }
-
-    h2 {
-      color: #00adb5;
-      font-size: 1.2rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 5px;
-      margin-bottom: 10px;
+    .featured-project {
+      background: linear-gradient(95deg, #e94560 30%, #ffd36d 100%);
+      color: #18122b;
+      border-radius: 14px;
+      padding: 1.1rem 1rem;
+      margin-bottom: 0.8rem;
+      box-shadow: 0 2px 16px #e9456035;
     }
-
-    h3 {
-      font-size: 1rem;
-      color: #f5f5f5;
+    .featured-project a {
+      color: #18122b;
+      font-weight: bold;
+      text-decoration: underline wavy;
     }
-
-    p, li {
-      font-size: 0.85rem;
-      line-height: 1.4;
-      color: #ccc;
+    .contact-links a {
+      color: var(--accent);
+      font-weight: bold;
+      text-decoration: underline dashed;
+      margin-right: 10px;
+      transition: color 0.15s;
     }
-
-    ul {
-      list-style-type: square;
-      padding-left: 20px;
+    .contact-links a:hover {
+      color: var(--primary);
     }
-
-    footer {
-      text-align: center;
-      color: #777;
-      font-size: 0.8rem;
-      padding: 10px;
-      margin-top: 20px;
-      border-top: 1px solid #333;
-    }
-
-    a {
-      color: #00adb5;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
+    @media (max-width: 700px) {
+      .main-container {
+        max-width: 100vw;
+        padding: 0 2vw;
+      }
+      .colorful-container {
+        padding: 1.1rem 0.7rem;
+      }
+      .header {
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+      .avatar {
+        width: 65px;
+        height: 65px;
+      }
+      h1 {
+        font-size: 1.25rem;
+      }
+      .section-title {
+        font-size: 1.06rem;
+      }
+      .featured-project {
+        padding: 0.6rem 0.4rem;
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
-
 <body>
-  <header>
-    <h1>Caroline Murithi</h1>
-    <p>Data & AI Enthusiast | ICT Specialist</p>
-  </header>
+  <div class="main-container">
 
-  <div class="container">
-    <h2>🎓 Academic Background</h2>
-    <p><strong>Bachelor of Business Information Technology (BBIT)</strong> — KCA University</p>
-    <p><strong>Currently Pursuing:</strong> Data and AI Program</p>
+    <!-- Header Container -->
+    <div class="colorful-container">
+      <div class="header">
+        <img src="assets/profile.jpg" alt="Profile Avatar" class="avatar">
+        <div>
+          <h1>👋 Hi, I'm Weldon Kipkoech</h1>
+          <div class="subtitle">Data Scientist | AI Explorer | Software Engineer</div>
+          <div class="tagline">
+            🚀 Blending data, code, and creativity to build smart, beautiful things.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Me -->
+    <div class="colorful-container">
+      <div class="section-title">About Me</div>
+      <p>
+        I'm a passionate explorer in Artificial Intelligence, Machine Learning, and Data Analysis. My coding journey is a fusion of creativity and logic—mastering both the art of user experiences and the science of intelligent models.
+      </p>
+      <ul>
+        <li>🎨 <b>Frontend Alchemist:</b> Crafting immersive user interfaces with React, CSS, and HTML.</li>
+        <li>🤖 <b>Machine Learning Maestro:</b> Building models that learn, predict, and evolve.</li>
+        <li>💡 <b>Innovator:</b> Driven to push the boundaries with code and data.</li>
+      </ul>
+    </div>
+
+    <!-- Skills -->
+    <div class="colorful-container">
+      <div class="section-title">🛠️ Skills</div>
+      <ul class="skills-list">
+        <li>📊 <b>Data Science &amp; Analytics:</b> Data wrangling, visualization, model building</li>
+        <li>🧠 <b>Artificial Intelligence &amp; ML:</b> Predictive modeling, NLP, deep learning</li>
+        <li>💻 <b>Software Engineering:</b> Backend &amp; frontend dev, automation, scripting</li>
+      </ul>
+      <div class="badges">
+        <img src="https://img.shields.io/badge/Matplotlib-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Matplotlib" />
+        <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" alt="NumPy" />
+        <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge" alt="Pandas" />
+        <img src="https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white&style=for-the-badge" alt="Plotly" />
+        <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" alt="MongoDB" />
+        <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge" alt="Bootstrap" />
+        <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" alt="React" />
+        <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" alt="TailwindCSS" />
+        <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=for-the-badge" alt="Vercel" />
+        <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub" />
+        <img src="https://img.shields.io/badge/Trello-0052CC?logo=trello&logoColor=white&style=for-the-badge" alt="Trello" />
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <div class="colorful-container">
+      <div class="section-title">🌟 Projects</div>
+      <ul class="projects-list">
+        <li>Netflix Data Analysis</li>
+        <li>Hotel Performance Analytics Dashboard</li>
+        <li>Exploratory Titanic Dataset EDA</li>
+        <li>HR Analytics Dashboard (Tableau)</li>
+        <li>Regression Models (Linear & Multivariate</li>
+      </ul>
+      <div class="featured-project">
+        <b>Netflix Data Analysis:</b>
+        <br>
+        A comprehensive data science project exploring Netflix’s catalog, revealing insights about genres, trends, and more using Python, Pandas, and visualizations.<br>
+        <a href="https://www.kaggle.com/code/weldonsitienei/weldon-kipkoech-cs-da02-25064" target="_blank" rel="noopener">
+          🌐 View on Kaggle
+        </a>
+      </div>
+      <div class="featured-project">
+        <b>Hotel Performance Analytics Dashboard:</b>
+        <br>
+    A visually rich dashboard analyzing hotel revenue, occupancy, performance metrics, and operational KPIs 
+    for multiple luxury properties. Includes insights on ADR, RevPAR, cancellations, and realization rates.<br>
+    <a href="https://www.kaggle.com/code/weldonsitienei/Business-Intelligence_POWER-BI" target="_blank">📊 View on Github</a> &nbsp;|&nbsp;
+    <a href="https://drive.google.com/file/d/1LxvqWB4g5RawkIOVFaLrMnh07KIFDw0N/view?usp=drive_link" target="_blank">💾 Download PBIX File</a>
+        </a>
+      </div>
+      <div class="featured-project">
+        <b>Exploratory Titanic Dataset EDA:</b>
+        <br>
+    Performed in-depth analysis of the Titanic dataset to uncover survival trends based on gender, class,
+    and age. Created visualizations and derived insights.<br>
+        <a href="https://www.kaggle.com/code/weldonsitienei/weldon-kipkoech-eda" target="_blank" rel="noopener">
+          🌐 View on Kaggle
+        </a>
+      </div>
+      <div class="featured-project">
+  <b>HR Analytics Dashboard (Tableau):</b><br>
+  An interactive Tableau dashboard visualizing key HR metrics such as employee turnover, departmental performance, and job satisfaction.
+  It enables HR professionals to make data-driven decisions by revealing workforce trends and attrition insights.<br>
+  <a href="https://public.tableau.com/views/HRDashboard_17607540673410/HRSummary?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+     target="_blank" rel="noopener">🌐 View on Tableau Public</a> &nbsp;|&nbsp;
+  <a href="https://github.com/weldonkipkoech/Data-Visualization-with-Tableau/blob/main/HR%20DASHBOARD.twbx" 
+     target="_blank" rel="noopener">📁 Download Tableau File (.twbx)</a>
+</div>
+      
+<div class="featured-project">
+  <b>Regression Models (Linear & Multivariate):</b><br>
+  Implemented <strong>Linear Regression</strong> models to predict housing prices based on key features such as area, number of bedrooms, and age. 
+  The project covers both <strong>Univariate</strong> and <strong>Multivariate Regression</strong> approaches using Python’s <code>scikit-learn</code>, <code>pandas</code>, and <code>matplotlib</code>.<br>
+  <a href="https://colab.research.google.com/drive/1Qz4xi_J7Ul4QsjTKGcfzV2xIFfWO_WDr?usp=sharing" 
+     target="_blank" rel="noopener">🌐 View on Google Colab</a> &nbsp;|&nbsp;
+  <a href="assets/Weldon_Kipkoech-CS-DA02-25064-Regression Models.pdf" target="_blank" rel="noopener">📄 View Report (PDF)</a>
+</div>
+
+      <div>
+        See more on my <a href="https://weldonkipkoech.github.io/projects/" target="_blank">PROJECTS</a>.
+      </div>
+    </div>
+
+
+    <!-- Collaborate -->
+    <div class="colorful-container">
+      <div class="section-title">🤝 Let's Collaborate!</div>
+      <p>
+        I'm always open to collaborative projects and open-source contributions.<br>
+        Got an idea or want to geek out on tech? Let's connect!
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="colorful-container">
+      <div class="section-title">🔗 Connect With Me</div>
+      <div class="contact-links">
+        <a href="mailto:weldonkipkoech@email.com">Email</a>
+        <a href="https://github.com/weldonkipkoech" target="_blank">GitHub</a>
+        <a href="https://www.kaggle.com/weldonsitienei" target="_blank">Kaggle</a>
+      </div>
+    </div>
+
   </div>
-
-  <div class="container">
-    <h2>💼 Work Experience</h2>
-    <h3>ICT Department Intern — KALRO Headquarters</h3>
-    <ul>
-      <li>Assisted in system maintenance, software updates, and troubleshooting.</li>
-      <li>Supported data management and reporting tasks for internal projects.</li>
-    </ul>
-
-    <h3>IT Technician & Accounting Assistant — Eastern Ark Hotel & Conference Centre</h3>
-    <ul>
-      <li>Managed IT infrastructure, user support, and system configurations.</li>
-      <li>Provided accounting support through data entry, reconciliations, and report generation.</li>
-    </ul>
-  </div>
-
-  <div class="container">
-    <h2>🧾 Certifications</h2>
-    <ul>
-      <li>Cyber Shujaa Data & AI Program (Ongoing)</li>
-    </ul>
-  </div>
-
-  <div class="container">
-    <h2>🧠 Skills</h2>
-    <ul>
-      <li>Data Analysis (Python, Power BI, Excel, SQL)</li>
-      <li>Machine Learning & Deep Learning</li>
-      <li>IT Support & Troubleshooting</li>
-      <li>Data Visualization & Reporting</li>
-      <li>Problem Solving & Team Collaboration</li>
-    </ul>
-  </div>
-
-  <div class="container">
-    <h2>🧩 Projects</h2>
-    <h3>Netflix Data Wrangling and Cleaning</h3>
-    <p><strong>Date:</strong> September 2025</p>
-    <p><strong>Tools:</strong> Python, Pandas, Google Colab</p>
-    <p>This project focused on <strong>data wrangling</strong> and <strong>cleaning</strong> the Netflix dataset from Kaggle. 
-    The goal was to prepare and validate the dataset for accurate analysis and visualization.</p>
-
-    <p><strong>Key Steps:</strong></p>
-    <ul>
-      <li>Imported and explored the dataset using Pandas</li>
-      <li>Handled missing values, duplicates, and inconsistent formats</li>
-      <li>Created new features such as <code>duration_value</code> and <code>duration_unit</code></li>
-      <li>Validated and exported the cleaned dataset as <code>netflix_clean.csv</code></li>
-    </ul>
-  </div>
-
-  <footer>
-    <p>© 2025 Caroline Murithi. All rights reserved.</p>
-  </footer>
 </body>
 </html>
