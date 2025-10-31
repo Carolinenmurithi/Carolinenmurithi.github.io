@@ -1,87 +1,272 @@
 ---
-layout: default
+layout: "default"
 title: "HOME"
 ---
 
-# 👋 Hi, I'm Caroline Murithi
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caroline Murithi | Portfolio</title>
 
-**Data Analyst | Machine Learning Enthusiast | Tech Innovator**  
-🚀 *Transforming raw data into actionable insights and intelligent systems.*
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bubblegum+Sans&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
----
+  <style>
+    :root {
+      --primary: #ffd36d;
+      --secondary: #e94560;
+      --accent: #14ffec;
+      --bg: #18122b;
+      --container-bg: #221e3a;
+      --container-alt: #232d4b;
+      --border: #3c3752;
+      --shadow: 0 6px 32px rgba(44,30,92,0.24);
+      --sep: #332d64;
+      --badge-bg: #23214b;
+      --badge-radius: 10px;
+    }
 
-## 💫 About Me
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(120deg, #1f1d3a 0%, #3f3351 100%);
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      min-height: 100vh;
+      width: 100vw;
+      box-sizing: border-box;
+    }
 
-I'm a passionate **data and technology enthusiast** who loves discovering patterns in data, building predictive models, and designing solutions that make an impact.  
-My work merges analytics, creativity, and innovation to deliver efficient, data-driven decisions.
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-- 📈 **Data Analyst:** Turning raw datasets into meaningful visual insights  
-- 🤖 **Machine Learning Explorer:** Building and fine-tuning intelligent algorithms  
-- 💡 **Problem Solver:** Combining creativity and logic to craft practical tech solutions  
+    .main-container {
+      width: 98%;
+      max-width: 970px;
+      margin: 2.5rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.6rem;
+    }
 
----
+    .colorful-container {
+      background: linear-gradient(123deg, var(--container-bg) 70%, var(--container-alt) 100%);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 2.2rem 1.8rem 1.8rem 1.8rem;
+      border: 1.5px solid var(--border);
+      transition: transform 0.18s;
+    }
 
-## 🛠️ Skills
+    .colorful-container:hover {
+      transform: scale(1.017);
+      box-shadow: 0 8px 40px #14112f66;
+    }
 
-- 📊 **Data Analytics:** Excel, Power BI, Tableau, Python (Pandas, NumPy, Matplotlib)  
-- 🧠 **Machine Learning:** Regression, Classification, Clustering, Model Evaluation  
-- 💻 **Programming & Tools:** Python, SQL, GitHub, Google Colab, Jupyter Notebooks  
-- 🎨 **Visualization:** Transforming numbers into clear, compelling dashboards  
+    .header {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 2rem;
+    }
 
-**Technologies I Use:**  
-![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge)
-![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge)
-![NumPy](https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge)
-![Matplotlib](https://img.shields.io/badge/Matplotlib-00599C?logo=python&logoColor=white&style=for-the-badge)
-![PowerBI](https://img.shields.io/badge/PowerBI-F2C811?logo=powerbi&logoColor=black&style=for-the-badge)
-![Tableau](https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge)
-![SQL](https://img.shields.io/badge/SQL-003B57?logo=sqlite&logoColor=white&style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge)
+    .avatar {
+      border-radius: 50%;
+      border: 3px solid var(--primary);
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      box-shadow: 0 2px 16px #ffd36d44;
+      background: #fff;
+    }
 
----
+    h1 {
+      font-family: 'Bungee', cursive;
+      color: var(--primary);
+      font-size: 2.6rem;
+      margin: 0 0 8px 0;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 0 #332d6433, 0 2px 8px #ffd36d33;
+    }
 
-## 🌟 Featured Projects
+    .subtitle {
+      color: var(--secondary);
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 1.25rem;
+      margin-bottom: 0.2rem;
+    }
 
-### **Sales Performance Dashboard**
-An interactive Power BI dashboard analyzing sales trends, top products, customer demographics, and KPIs.  
-📊 [View on Power BI Service](#)  
-💾 [Download PBIX File](#)
+    .tagline {
+      color: var(--primary);
+      font-size: 1.18rem;
+      font-family: 'Bubblegum Sans', cursive;
+      margin-bottom: 0.9rem;
+    }
 
----
+    .section-title {
+      color: var(--secondary);
+      font-family: 'Bungee', cursive;
+      font-size: 1.5rem;
+      margin-top: 0;
+      margin-bottom: 1.1rem;
+      letter-spacing: 1px;
+      text-shadow: 0 1px 8px #e9456055;
+    }
 
-### **Customer Churn Prediction**
-Developed a machine learning model to predict telecom customer churn using Python and scikit-learn.  
-🔍 Applied **Logistic Regression** and **Random Forests** to improve accuracy.  
-🌐 [View on Kaggle](#)
+    ul, li {
+      font-size: 1.05rem;
+      line-height: 1.7;
+      margin-bottom: 0.1em;
+    }
 
----
+    .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 12px;
+      margin-top: 0.8rem;
+    }
 
-### **Employee Performance Analytics (Tableau)**
-A data visualization project focusing on employee productivity and performance metrics.  
-🧾 [View on Tableau Public](#)
+    .badges img {
+      background: var(--badge-bg);
+      border-radius: var(--badge-radius);
+      box-shadow: 0 2px 8px #17113344;
+      padding: 5px 0;
+      height: 34px;
+    }
 
----
+    .featured-project {
+      background: linear-gradient(95deg, #e94560 30%, #ffd36d 100%);
+      color: #18122b;
+      border-radius: 14px;
+      padding: 1.1rem 1rem;
+      margin-bottom: 0.8rem;
+      box-shadow: 0 2px 16px #e9456035;
+    }
 
-### **Retail Data Insights with SQL**
-Performed advanced SQL queries to uncover purchasing patterns, product trends, and profitability insights.  
-💻 [View on GitHub](#)
+    .featured-project a {
+      color: #18122b;
+      font-weight: bold;
+      text-decoration: underline wavy;
+    }
 
----
+    .contact-links a {
+      color: var(--accent);
+      font-weight: bold;
+      text-decoration: underline dashed;
+      margin-right: 10px;
+      transition: color 0.15s;
+    }
 
-## 🤝 Let’s Collaborate!
+    .contact-links a:hover {
+      color: var(--primary);
+    }
 
-I’m open to **freelance data projects**, **analytics collaborations**, and **open-source contributions**.  
-If you’re working on something exciting and data-driven, let’s create something impactful together!
+    @media (max-width: 700px) {
+      .header { flex-direction: column; gap: 0.5rem; }
+      .avatar { width: 70px; height: 70px; }
+      h1 { font-size: 1.6rem; }
+      .section-title { font-size: 1.15rem; }
+    }
+  </style>
+</head>
 
----
+<body>
+  <div class="main-container">
 
-## 🔗 Connect With Me
+    <!-- Header -->
+    <div class="colorful-container">
+      <div class="header">
+        <img src="assets/caroline.jpg" alt="Caroline Murithi" class="avatar">
+        <div>
+          <h1>👋 Hi, I'm Caroline Murithi</h1>
+          <div class="subtitle">Data Analyst | Machine Learning Enthusiast | Innovator</div>
+          <div class="tagline">💡 Turning data into decisions that inspire action.</div>
+        </div>
+      </div>
+    </div>
 
-📧 [Email Me](mailto:carolin.murithi@email.com)  
-💻 [GitHub](https://github.com/carolinemurithi)  
-📊 [Kaggle](https://www.kaggle.com/carolinemurithi)  
-💼 [LinkedIn](https://www.linkedin.com/in/carolinemurithi)
+    <!-- About -->
+    <div class="colorful-container">
+      <div class="section-title">About Me</div>
+      <p>
+        I'm a passionate <b>data-driven problem solver</b> who loves uncovering insights and patterns from information. 
+        I thrive at the intersection of <b>data analytics, visualization, and machine learning</b> — translating complex numbers into meaningful narratives.
+      </p>
+      <ul>
+        <li>📈 <b>Data Storyteller:</b> Visualizing insights that drive impact</li>
+        <li>🤖 <b>Machine Learning Enthusiast:</b> Exploring predictive and classification models</li>
+        <li>🎯 <b>Detail-Oriented:</b> Always curious about the "why" behind the data</li>
+      </ul>
+    </div>
 
----
+    <!-- Skills -->
+    <div class="colorful-container">
+      <div class="section-title">🛠️ Skills</div>
+      <ul>
+        <li>Python (Pandas, NumPy, Matplotlib, Seaborn, scikit-learn)</li>
+        <li>Data Visualization (Power BI, Tableau)</li>
+        <li>SQL for Data Extraction and Manipulation</li>
+        <li>Machine Learning: Regression, Classification, Clustering</li>
+      </ul>
+      <div class="badges">
+        <img src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white&style=for-the-badge" />
+        <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge" />
+        <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" />
+        <img src="https://img.shields.io/badge/Tableau-E97627?logo=tableau&logoColor=white&style=for-the-badge" />
+        <img src="https://img.shields.io/badge/PowerBI-F2C811?logo=powerbi&logoColor=black&style=for-the-badge" />
+        <img src="https://img.shields.io/badge/SQL-003B57?logo=sqlite&logoColor=white&style=for-the-badge" />
+        <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" />
+      </div>
+    </div>
 
-*“Data tells a story — my mission is to make sure everyone understands it.”*
+    <!-- Projects -->
+    <div class="colorful-container">
+      <div class="section-title">🌟 Projects</div>
+
+      <div class="featured-project">
+        <b>Sales Performance Dashboard</b><br>
+        An interactive Power BI dashboard visualizing sales performance, top regions, and growth metrics.<br>
+        <a href="#">📊 View Dashboard</a>
+      </div>
+
+      <div class="featured-project">
+        <b>Customer Churn Prediction</b><br>
+        Built a classification model using Python to predict telecom customer churn with 85% accuracy.<br>
+        <a href="#">🌐 View Project</a>
+      </div>
+
+      <div class="featured-project">
+        <b>Retail Insights SQL Analysis</b><br>
+        Used SQL to uncover purchasing trends, seasonality, and top-performing products.<br>
+        <a href="#">💻 View SQL Notebook</a>
+      </div>
+    </div>
+
+    <!-- Collaborate -->
+    <div class="colorful-container">
+      <div class="section-title">🤝 Let's Collaborate!</div>
+      <p>
+        I'm open to data analytics projects, collaborations, or internships that challenge me to grow and innovate.  
+        Together, we can transform data into smarter decisions.
+      </p>
+    </div>
+
+    <!-- Contact -->
+    <div class="colorful-container">
+      <div class="section-title">🔗 Connect With Me</div>
+      <div class="contact-links">
+        <a href="mailto:carolinemurithi@email.com">Email</a>
+        <a href="https://github.com/carolinemurithi" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/carolinemurithi" target="_blank">LinkedIn</a>
+        <a href="https://www.kaggle.com/carolinemurithi" target="_blank">Kaggle</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
