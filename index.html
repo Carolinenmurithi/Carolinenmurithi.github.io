@@ -19,74 +19,95 @@ title: "HOME"
     }
     body {
       font-family: "Poppins", sans-serif;
-      color: #1a1a1a;
-      background: #f9fafc;
+      color: #e4e4e7;
+      background: #0f172a;
       line-height: 1.6;
     }
     header {
-      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      background: linear-gradient(135deg, #0ea5e9, #1e3a8a);
       color: white;
       text-align: center;
       padding: 4rem 1rem;
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       font-weight: 600;
     }
     header p {
       margin-top: 0.5rem;
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      opacity: 0.9;
     }
+
     section {
-      max-width: 1000px;
+      max-width: 900px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      background: #1e293b;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      transition: all 0.3s ease-in-out;
+    }
+    section:hover {
+      box-shadow: 0 0 20px rgba(14, 165, 233, 0.3);
+      transform: translateY(-3px);
     }
     h2 {
-      color: #0077b6;
-      border-left: 5px solid #00b4d8;
+      color: #38bdf8;
+      border-left: 4px solid #0ea5e9;
       padding-left: 10px;
       margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    p, li {
+      color: #d1d5db;
+      font-size: 1rem;
     }
     ul {
       list-style: none;
-      margin-left: 0;
+      padding-left: 0;
     }
     ul li {
-      background: white;
+      background: #334155;
       padding: 1rem;
       margin-bottom: 0.8rem;
       border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      transition: background 0.3s ease;
+    }
+    ul li:hover {
+      background: #475569;
     }
     .skills span {
       display: inline-block;
-      background: #0077b6;
+      background: #0ea5e9;
       color: white;
-      padding: 6px 12px;
-      margin: 4px;
+      padding: 6px 14px;
+      margin: 5px;
       border-radius: 20px;
       font-size: 0.9rem;
-    }
-    footer {
-      background: #1a1a1a;
-      color: #f1f1f1;
-      text-align: center;
-      padding: 1.5rem 0;
-      margin-top: 3rem;
-    }
-    a {
-      color: #0077b6;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
+      box-shadow: 0 0 10px rgba(14, 165, 233, 0.3);
     }
     .contact a {
       display: inline-block;
-      margin: 0.3rem;
-      color: #0077b6;
+      margin: 0.4rem;
+      color: #38bdf8;
+      text-decoration: none;
       font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    .contact a:hover {
+      color: #0ea5e9;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      color: #9ca3af;
+      margin-top: 3rem;
+      background: #111827;
+    }
+    a {
+      color: #38bdf8;
     }
   </style>
 </head>
@@ -147,6 +168,18 @@ title: "HOME"
         <strong>Retail Data Insights</strong> — SQL<br />
         Queried and visualized data to reveal purchasing patterns and trends.
       </li>
+      <li>
+        <strong>Netflix Data Wrangling and Cleaning</strong> — Python, Pandas, Google Colab<br />
+        <em>Date:</em> September 2025<br />
+        Focused on <strong>data wrangling</strong> and <strong>cleaning</strong> the Netflix dataset from Kaggle.  
+        <br><br><strong>Key Steps:</strong>
+        <ul>
+          <li>Imported and explored the dataset using Pandas</li>
+          <li>Handled missing values, duplicates, and inconsistent formats</li>
+          <li>Created new features such as <code>duration_value</code> and <code>duration_unit</code></li>
+          <li>Validated and exported the cleaned dataset as <code>netflix_clean.csv</code></li>
+        </ul>
+      </li>
     </ul>
   </section>
 
@@ -166,14 +199,14 @@ title: "HOME"
 
   <section class="contact">
     <h2>Contact</h2>
-    <p>Let's collaborate or connect!</p>
+    <p>Let’s collaborate or connect!</p>
     <a href="mailto:carolinemurithi@email.com">📧 Email</a>
     <a href="https://github.com/carolinemurithi" target="_blank">💻 GitHub</a>
     <a href="https://www.linkedin.com/in/carolinemurithi" target="_blank">💼 LinkedIn</a>
   </section>
 
   <footer>
-    <p>© 2025 Caroline Murithi | Built with ❤️ and data</p>
+    <p>© 2025 Caroline Murithi | Built with ❤️ and Data</p>
   </footer>
 
 </body>
