@@ -2,191 +2,179 @@
 layout: default
 title: "HOME"
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Caroline Murithi - Data Analyst & AI Enthusiast Portfolio" />
+  <title>Caroline Murithi | Data & AI Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #1a1a1a;
+      background: #f9fafc;
+      line-height: 1.6;
+    }
+    header {
+      background: linear-gradient(135deg, #0077b6, #00b4d8);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 600;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+    }
+    section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      color: #0077b6;
+      border-left: 5px solid #00b4d8;
+      padding-left: 10px;
+      margin-bottom: 1rem;
+    }
+    ul {
+      list-style: none;
+      margin-left: 0;
+    }
+    ul li {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 0.8rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+    .skills span {
+      display: inline-block;
+      background: #0077b6;
+      color: white;
+      padding: 6px 12px;
+      margin: 4px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    footer {
+      background: #1a1a1a;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 1.5rem 0;
+      margin-top: 3rem;
+    }
+    a {
+      color: #0077b6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 0.3rem;
+      color: #0077b6;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
 
-<style>
-/* ======== Base Styles ======== */
-body {
-  font-family: 'Inter', sans-serif;
-  color: #e5e7eb;
-  background: linear-gradient(180deg, #0f172a, #1e293b);
-  margin: 0;
-  padding: 0 1.5rem;
-  line-height: 1.7;
-}
+  <header>
+    <h1>Caroline Murithi</h1>
+    <p>Data Analyst | Machine Learning Enthusiast | Tech Innovator</p>
+  </header>
 
-section {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 2rem;
-  background: rgba(30, 41, 59, 0.8);
-  border-radius: 1.5rem;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
-  transition: transform 0.3s ease;
-}
-section:hover {
-  transform: translateY(-5px);
-}
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate <strong>data and technology enthusiast</strong> who loves discovering
+      insights from data, building predictive models, and creating innovative solutions.
+      My focus lies in leveraging data analytics and machine learning to drive meaningful impact.
+    </p>
+  </section>
 
-h1, h2, h3 {
-  color: #38bdf8;
-  font-weight: 700;
-}
+  <section>
+    <h2>Academic Background</h2>
+    <ul>
+      <li><strong>Bachelor of Business Information Technology (BBIT)</strong> — KCA University</li>
+      <li><strong>Currently Pursuing:</strong> Cyber Shujaa Data & AI Program</li>
+    </ul>
+  </section>
 
-h1 span {
-  color: #facc15;
-}
+  <section>
+    <h2>Work Experience</h2>
+    <ul>
+      <li>
+        <strong>ICT Department Intern</strong> — KALRO Headquarters<br />
+        Supported IT systems maintenance, troubleshooting, and data management.
+      </li>
+      <li>
+        <strong>IT Technician & Accounting Assistant</strong> — Eastern Ark Hotel & Conference Centre<br />
+        Provided IT support, managed accounting systems, and prepared financial reports.
+      </li>
+    </ul>
+  </section>
 
-a {
-  color: #38bdf8;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #facc15;
-}
+  <section>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>Sales Performance Dashboard</strong> — Power BI<br />
+        Built an interactive dashboard analyzing sales trends, top products, and KPIs.
+      </li>
+      <li>
+        <strong>Customer Churn Prediction</strong> — Python & Scikit-learn<br />
+        Developed a predictive model to identify customers likely to churn.
+      </li>
+      <li>
+        <strong>Employee Performance Analytics</strong> — Tableau<br />
+        Created visual reports on employee productivity and efficiency.
+      </li>
+      <li>
+        <strong>Retail Data Insights</strong> — SQL<br />
+        Queried and visualized data to reveal purchasing patterns and trends.
+      </li>
+    </ul>
+  </section>
 
-/* ======== Skills Badges ======== */
-.badges {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-/* ======== Projects Section ======== */
-.project {
-  margin-bottom: 2rem;
-}
-.project h3 {
-  color: #facc15;
-}
-.project-links a {
-  display: inline-block;
-  margin-right: 10px;
-  font-weight: 600;
-}
-.project:hover {
-  background: rgba(51, 65, 85, 0.7);
-  border-radius: 1rem;
-  padding: 1rem;
-  transition: 0.3s ease;
-}
-
-/* ======== Contact Section ======== */
-.contact-links a {
-  display: inline-block;
-  margin-right: 1.2rem;
-  font-size: 1.1rem;
-}
-
-/* ======== Fade-in Animation ======== */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 1s forwards;
-}
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-</style>
-
-<section class="fade-in">
-  <h1>👋 Hi, I'm <span>Weldon Kipkoech</span></h1>
-  <p><strong>Data Scientist | AI Explorer | Software Engineer</strong></p>
-  <p>🚀 Blending data, code, and creativity to build smart, beautiful things.</p>
-</section>
-
-<section class="fade-in">
-  <h2>🎯 About Me</h2>
-  <p>I'm a passionate explorer in <strong>Artificial Intelligence</strong>, <strong>Machine Learning</strong>, and <strong>Data Analysis</strong>. My coding journey is a fusion of creativity and logic—mastering both the art of user experiences and the science of intelligent models.</p>
-  <ul>
-    <li>🎨 <strong>Frontend Alchemist:</strong> Crafting immersive user interfaces with React, CSS, and HTML</li>
-    <li>🤖 <strong>Machine Learning Maestro:</strong> Building models that learn, predict, and evolve</li>
-    <li>💡 <strong>Innovator:</strong> Driven to push the boundaries with code and data</li>
-  </ul>
-</section>
-
-<section class="fade-in">
-  <h2>🛠️ Skills</h2>
-  <div class="badges">
-    <img src="https://img.shields.io/badge/Matplotlib-3776AB?logo=python&logoColor=white&style=for-the-badge" alt="Matplotlib">
-    <img src="https://img.shields.io/badge/NumPy-013243?logo=numpy&logoColor=white&style=for-the-badge" alt="NumPy">
-    <img src="https://img.shields.io/badge/Pandas-150458?logo=pandas&logoColor=white&style=for-the-badge" alt="Pandas">
-    <img src="https://img.shields.io/badge/Plotly-3F4F75?logo=plotly&logoColor=white&style=for-the-badge" alt="Plotly">
-    <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" alt="MongoDB">
-    <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=bootstrap&logoColor=white&style=for-the-badge" alt="Bootstrap">
-    <img src="https://img.shields.io/badge/React-61DAFB?logo=react&logoColor=black&style=for-the-badge" alt="React">
-    <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=white&style=for-the-badge" alt="TailwindCSS">
-    <img src="https://img.shields.io/badge/Vercel-000000?logo=vercel&logoColor=white&style=for-the-badge" alt="Vercel">
-    <img src="https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=white&style=for-the-badge" alt="GitHub">
-    <img src="https://img.shields.io/badge/Trello-0052CC?logo=trello&logoColor=white&style=for-the-badge" alt="Trello">
-  </div>
-</section>
-
-<section class="fade-in">
-  <h2>🌟 Projects</h2>
-
-  <div class="project">
-    <h3>Netflix Data Analysis</h3>
-    <p>Comprehensive exploration of Netflix’s catalog with insights on genres, trends, and more using Python, Pandas, and visualizations.</p>
-    <div class="project-links">
-      🔗 <a href="https://www.kaggle.com/code/weldonsitienei/weldon-kipkoech-cs-da02-25064" target="_blank">View on Kaggle</a>
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>Python</span>
+      <span>Power BI</span>
+      <span>Excel</span>
+      <span>SQL</span>
+      <span>Machine Learning</span>
+      <span>Data Visualization</span>
+      <span>Problem Solving</span>
+      <span>Team Collaboration</span>
     </div>
-  </div>
+  </section>
 
-  <div class="project">
-    <h3>Hotel Performance Analytics Dashboard</h3>
-    <p>Dashboard analyzing hotel revenue, occupancy, and operational KPIs across multiple luxury properties.</p>
-    <div class="project-links">
-      📊 <a href="https://www.kaggle.com/code/weldonsitienei/Business-Intelligence_POWER-BI" target="_blank">View on Kaggle</a>
-      💾 <a href="https://drive.google.com/file/d/1LxvqWB4g5RawkIOVFaLrMnh07KIFDw0N/view?usp=drive_link" target="_blank">Download PBIX File</a>
-    </div>
-  </div>
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Let's collaborate or connect!</p>
+    <a href="mailto:carolinemurithi@email.com">📧 Email</a>
+    <a href="https://github.com/carolinemurithi" target="_blank">💻 GitHub</a>
+    <a href="https://www.linkedin.com/in/carolinemurithi" target="_blank">💼 LinkedIn</a>
+  </section>
 
-  <div class="project">
-    <h3>Exploratory Titanic Dataset EDA</h3>
-    <p>Analyzed survival trends based on gender, class, and age using visual storytelling.</p>
-    <div class="project-links">
-      🌐 <a href="https://www.kaggle.com/code/weldonsitienei/weldon-kipkoech-eda" target="_blank">View on Kaggle</a>
-    </div>
-  </div>
+  <footer>
+    <p>© 2025 Caroline Murithi | Built with ❤️ and data</p>
+  </footer>
 
-  <div class="project">
-    <h3>HR Analytics Dashboard (Tableau)</h3>
-    <p>Interactive Tableau dashboard visualizing HR metrics like turnover and job satisfaction.</p>
-    <div class="project-links">
-      🌐 <a href="https://public.tableau.com/views/HRDashboard_17607540673410/HRSummary?:language=en-US" target="_blank">View on Tableau Public</a>
-      📁 <a href="https://github.com/weldonkipkoech/Data-Visualization-with-Tableau/blob/main/HR%20DASHBOARD.twbx" target="_blank">Download Tableau File</a>
-    </div>
-  </div>
-
-  <div class="project">
-    <h3>Regression Models (Linear & Multivariate)</h3>
-    <p>Predicted housing prices using regression models based on area, bedrooms, and age.</p>
-    <div class="project-links">
-      🌐 <a href="https://colab.research.google.com/drive/1Qz4xi_J7Ul4QsjTKGcfzV2xIFfWO_WDr?usp=sharing" target="_blank">View on Google Colab</a>
-      📄 <a href="assets/Weldon_Kipkoech-CS-DA02-25064-Regression Models.pdf" target="_blank">View Report (PDF)</a>
-    </div>
-  </div>
-
-  <p>➡️ See more on my <a href="https://weldonkipkoech.github.io/projects/" target="_blank"><strong>Projects Page</strong></a>.</p>
-</section>
-
-<section class="fade-in">
-  <h2>🤝 Let's Collaborate!</h2>
-  <p>I'm always open to collaborative projects and open-source contributions. Got an idea or want to geek out on tech? Let's connect!</p>
-</section>
-
-<section class="fade-in">
-  <h2>🔗 Connect With Me</h2>
-  <div class="contact-links">
-    📧 <a href="mailto:weldonkipkoech@email.com">Email</a>  
-    💻 <a href="https://github.com/weldonkipkoech" target="_blank">GitHub</a>  
-    📈 <a href="https://www.kaggle.com/weldonsitienei" target="_blank">Kaggle</a>
-  </div>
-</section>
-
-
+</body>
+</html>
